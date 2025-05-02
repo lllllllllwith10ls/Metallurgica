@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "metallurgica:block/palettes/stone_types/mineral/cuprite_deposit"
+    "all": "metallurgica:block/cuprite_deposit"
   }
 }

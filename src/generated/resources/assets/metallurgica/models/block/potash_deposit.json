@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:block/cube_column",
   "textures": {
-    "end": "metallurgica:block/palettes/stone_types/mineral/potash_deposit_top",
-    "side": "metallurgica:block/palettes/stone_types/mineral/potash_deposit"
+    "end": "metallurgica:block/potash_deposit_top",
+    "side": "metallurgica:block/potash_deposit"
   }
 }

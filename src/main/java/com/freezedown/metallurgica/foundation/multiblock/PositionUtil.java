@@ -2,7 +2,7 @@ package com.freezedown.metallurgica.foundation.multiblock;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
-import org.jgrapht.alg.util.Triple;
+import org.apache.commons.lang3.tuple.Triple;
 
 import java.util.ArrayList;
 import java.util.List;
