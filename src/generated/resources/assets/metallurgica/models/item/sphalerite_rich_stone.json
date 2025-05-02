@@ -1,6 +1,3 @@
 {
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "metallurgica:block/palettes/stone_types/mineral/sphalerite_2"
-  }
+  "parent": "metallurgica:block/sphalerite_natural_2"
 }

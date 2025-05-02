@@ -1,6 +1,3 @@
 {
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "metallurgica:block/palettes/stone_types/mineral/hematite_2"
-  }
+  "parent": "metallurgica:block/hematite_natural_2"
 }

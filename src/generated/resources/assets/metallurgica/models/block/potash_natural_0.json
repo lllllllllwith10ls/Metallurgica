@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "metallurgica:block/palettes/stone_types/mineral/potash_top_0",
+    "side": "metallurgica:block/palettes/stone_types/mineral/potash_0"
+  }
+}

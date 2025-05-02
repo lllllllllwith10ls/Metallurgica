@@ -1,6 +1,3 @@
 {
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "metallurgica:block/palettes/stone_types/mineral/malachite_2"
-  }
+  "parent": "metallurgica:block/malachite_natural_2"
 }

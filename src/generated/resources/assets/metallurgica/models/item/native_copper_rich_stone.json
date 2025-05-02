@@ -1,6 +1,3 @@
 {
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "metallurgica:block/palettes/stone_types/mineral/native_copper_2"
-  }
+  "parent": "metallurgica:block/native_copper_natural_2"
 }

@@ -319,7 +319,7 @@ public class MetallurgicaRegistrate extends CreateRegistrate {
             ItemEntry<MetallurgicaItem> mineral
     ) {
         return this.block(name, MineralDepositBlock::new)
-                .transform(MBuilderTransformers.mineralDeposit())
+                .transform(MBuilderTransformers.mineralDeposit(name))
                 .loot((lt, bl) -> lt.add(bl, lt.createSingleItemTable(Items.COBBLESTONE)
                         .withPool(lt.applyExplosionCondition(mineral.get(), LootPool.lootPool()
                                 .setRolls(UniformGenerator.between(2.0f, 5.0f))

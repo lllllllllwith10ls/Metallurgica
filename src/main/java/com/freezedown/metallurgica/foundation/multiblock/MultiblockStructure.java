@@ -22,7 +22,7 @@ import net.minecraftforge.common.capabilities.ForgeCapabilities;
 import net.minecraftforge.common.util.LazyOptional;
 import net.minecraftforge.fluids.FluidStack;
 import net.minecraftforge.fluids.capability.IFluidHandler;
-import org.jgrapht.alg.util.Triple;
+import org.apache.commons.lang3.tuple.Triple;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -102,15 +102,15 @@ public class MultiblockStructure {
         }
         
         public int getWidth() {
-            return getSize().getFirst();
+            return getSize().getLeft();
         }
         
         public int getHeight() {
-            return getSize().getSecond();
+            return getSize().getMiddle();
         }
         
         public int getDepth() {
-            return getSize().getThird();
+            return getSize().getRight();
         }
         
         public CuboidBuilder withFluidOutputAt(int x, int y, int z, String identifier) {
@@ -124,10 +124,10 @@ public class MultiblockStructure {
             structure.add(Map.of(pos, block));
             return this;
         }
-        
+
         public CuboidBuilder withBlockAt(PositionUtil.PositionRange range, BlockState block) {
             for (Triple<Integer, Integer, Integer> pos : range.getPositions()) {
-                structure.add(Map.of(translateToMaster(pos.getFirst(), pos.getSecond(), pos.getThird()), block));
+                structure.add(Map.of(translateToMaster(pos.getLeft(), pos.getMiddle(), pos.getRight()), block));
             }
             return this;
         }

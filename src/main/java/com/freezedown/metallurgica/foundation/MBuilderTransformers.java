@@ -11,11 +11,12 @@ import net.minecraft.world.level.block.SoundType;
 
 public class MBuilderTransformers {
     
-    public static <B extends MineralDepositBlock, P> NonNullUnaryOperator<BlockBuilder<B, P>> mineralDeposit() {
+    public static <B extends MineralDepositBlock, P> NonNullUnaryOperator<BlockBuilder<B, P>> mineralDeposit(String name) {
         return b -> b.initialProperties(SharedProperties::stone)
                 .properties(p -> p.sound(SoundType.GILDED_BLACKSTONE).requiresCorrectToolForDrops())
                 .transform(TagGen.pickaxeOnly())
                 .blockstate((c, p) -> p.simpleBlock(c.get()))
+                .blockstate(MBlockStateGen.naturalMineralDepositTypeBlock(name))
                 .simpleItem();
     }
     public static <B extends Block, P> NonNullUnaryOperator<BlockBuilder<B, P>> stone(String name) {
@@ -35,7 +36,7 @@ public class MBuilderTransformers {
                 .blockstate((c, p) -> p.simpleBlock(c.get()))
                 .blockstate(MBlockStateGen.naturalMineralTypeBlock(name))
                 .item()
-                .model((c, p) -> p.cubeAll(c.getName(), p.modLoc("block/palettes/stone_types/mineral/" + name + "_2")))
+                .model((c, p) -> p.withExistingParent(c.getName(), p.modLoc("block/" + name + "_natural_2")))
                 .build();
     }
 }

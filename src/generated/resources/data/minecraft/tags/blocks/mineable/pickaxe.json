@@ -51,9 +51,13 @@
     "metallurgica:smithsonite_rich_stone",
     "metallurgica:rutile_deposit",
     "metallurgica:rutile_rich_stone",
+    "metallurgica:potash_deposit",
+    "metallurgica:potash_rich_stone",
     "metallurgica:cassiterite_deposit",
     "metallurgica:cassiterite_rich_stone",
     "metallurgica:fluorite_deposit",
-    "metallurgica:fluorite_rich_stone"
+    "metallurgica:fluorite_rich_stone",
+    "metallurgica:cuprite_deposit",
+    "metallurgica:cuprite_rich_stone"
   ]
 }
